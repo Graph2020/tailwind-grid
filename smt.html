@@ -12,13 +12,33 @@
 			crossorigin="anonymous"
 		></script>
 
-		<style></style>
+		<style>
+			.btn {
+				padding: 2px 5px;
+				background-color: rgb(220, 216, 216);
+				transition: all 0.3s;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+			.btn:hover {
+				transform: translateY(3px);
+			}
+			.btn:not(:last-of-type) {
+				margin-right: 5px;
+			}
+			.btn:first-of-type {
+				margin-left: 5px;
+			}
+			.allround > * {
+				border-radius: 5px;
+			}
+		</style>
 	</head>
 	<body class="flex flex-col items-center">
 		<!-- radio buttons -->
 		<div class="mt-4 flex h-20 w-full justify-center">
 			<div
-				class="flex h-6 w-44 items-center justify-center gap-3 rounded-full bg-[#f4f2f2] p-1 font-mono text-[8px]"
+				class="flex h-4 w-32 items-center justify-center gap-3 rounded-full bg-[#f4f2f2] p-1 font-mono text-[6px]"
 			>
 				<div class="flex items-center">
 					<input
@@ -30,7 +50,7 @@
 					/>
 					<label
 						for="home"
-						class="inline-block cursor-pointer rounded-full px-3 py-1 transition-all duration-200 peer-checked:bg-white"
+						class="inline-block cursor-pointer rounded-full px-2 py-0.5 transition-all duration-200 peer-checked:bg-white"
 					>
 						Home
 					</label>
@@ -40,7 +60,7 @@
 					<input id="about" type="radio" name="radios" class="peer sr-only" />
 					<label
 						for="about"
-						class="inline-block cursor-pointer rounded-full px-3 py-1 transition-all duration-200 peer-checked:bg-white"
+						class="inline-block cursor-pointer rounded-full px-2 py-0.5 transition-all duration-200 peer-checked:bg-white"
 					>
 						About
 					</label>
@@ -50,13 +70,53 @@
 					<input id="contact" type="radio" name="radios" class="peer sr-only" />
 					<label
 						for="contact"
-						class="inline-block cursor-pointer rounded-full px-3 py-1 transition-all duration-200 peer-checked:bg-white"
+						class="inline-block cursor-pointer rounded-full px-2 py-0.5 transition-all duration-200 peer-checked:bg-white"
 					>
 						Contact
 					</label>
 				</div>
 			</div>
 		</div>
+		<header class="flex items-center justify-center flex-col">
+			<h1 class="font-semibold w-60 text-center text-2xl mb-4">
+				A brand and product designer working with clients globally
+			</h1>
+			<!-- divs buttons -->
+			<div class="text-[7px] flex mb-12">
+				<p class="mt-[2px]">Expretise:</p>
+				<button class="btn">Branding</button>
+				<button class="btn">Product</button>
+				<button class="btn">Design system</button>
+			</div>
+		</header>
+		<!-- grid -->
+		<div class="w-[85%] h-[500px] grid grid-cols-2 grid-rows-3 gap-2 allround">
+			<img
+				src="/6476532f977fb5ef05f8a6a50ff9f49c.jpg"
+				class="w-full h-full object-cover"
+			/>
+			<img
+				src="/6476532f977fb5ef05f8a6a50ff9f49c.jpg"
+				class="w-full h-full object-cover"
+			/>
+			<img
+				src="/6476532f977fb5ef05f8a6a50ff9f49c.jpg"
+				class="w-full h-full object-cover"
+			/>
+			<img
+				src="/6476532f977fb5ef05f8a6a50ff9f49c.jpg"
+				class="w-full h-full object-cover"
+			/>
+			<img
+				src="/6476532f977fb5ef05f8a6a50ff9f49c.jpg"
+				class="w-full h-full object-cover"
+			/>
+			<img
+				src="/6476532f977fb5ef05f8a6a50ff9f49c.jpg"
+				class="w-full h-full object-cover"
+			/>
+		</div>
+
 		<!-- javaScript -->
 		<script src="java.js"></script>
 	</body>
