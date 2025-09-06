@@ -15,6 +15,48 @@
 		<style></style>
 	</head>
 	<body class="flex flex-col items-center">
+		<!-- radio buttons -->
+		<div class="mt-4 flex h-20 w-full justify-center">
+			<div
+				class="flex h-6 w-44 items-center justify-center gap-3 rounded-full bg-[#f4f2f2] p-1 font-mono text-[8px]"
+			>
+				<div class="flex items-center">
+					<input
+						id="home"
+						type="radio"
+						name="radios"
+						class="peer sr-only"
+						checked
+					/>
+					<label
+						for="home"
+						class="inline-block cursor-pointer rounded-full px-3 py-1 transition-all duration-200 peer-checked:bg-white"
+					>
+						Home
+					</label>
+				</div>
+
+				<div class="flex items-center">
+					<input id="about" type="radio" name="radios" class="peer sr-only" />
+					<label
+						for="about"
+						class="inline-block cursor-pointer rounded-full px-3 py-1 transition-all duration-200 peer-checked:bg-white"
+					>
+						About
+					</label>
+				</div>
+
+				<div class="flex items-center">
+					<input id="contact" type="radio" name="radios" class="peer sr-only" />
+					<label
+						for="contact"
+						class="inline-block cursor-pointer rounded-full px-3 py-1 transition-all duration-200 peer-checked:bg-white"
+					>
+						Contact
+					</label>
+				</div>
+			</div>
+		</div>
 		<!-- javaScript -->
 		<script src="java.js"></script>
 	</body>
